@@ -1,3 +1,100 @@
 {
-  "placeholderImages": []
+  "placeholderImages": [
+    {
+      "id": "hero-kids",
+      "description": "A group of happy kids wearing colorful clothes, playing outdoors.",
+      "imageUrl": "https://picsum.photos/seed/hero/1920/1080",
+      "imageHint": "happy kids"
+    },
+    {
+      "id": "category-boys",
+      "description": "A young boy smiling and wearing a cool t-shirt and jeans.",
+      "imageUrl": "https://picsum.photos/seed/boys/600/800",
+      "imageHint": "boy smiling"
+    },
+    {
+      "id": "category-girls",
+      "description": "A young girl in a colorful dress, twirling happily.",
+      "imageUrl": "https://picsum.photos/seed/girls/600/800",
+      "imageHint": "girl dress"
+    },
+    {
+      "id": "category-newborn",
+      "description": "A peaceful newborn baby in a soft, cozy onesie.",
+      "imageUrl": "https://picsum.photos/seed/newborn/600/800",
+      "imageHint": "newborn baby"
+    },
+    {
+      "id": "product-1", "description": "Dino Adventure T-Shirt", "imageUrl": "https://picsum.photos/seed/p1/500/500", "imageHint": "kids shirt"
+    },
+    {
+      "id": "product-2", "description": "Rainbow Stripe Leggings", "imageUrl": "https://picsum.photos/seed/p2/500/500", "imageHint": "kids leggings"
+    },
+    {
+      "id": "product-3", "description": "Cozy Cloud Onesie", "imageUrl": "https://picsum.photos/seed/p3/500/500", "imageHint": "baby onesie"
+    },
+    {
+      "id": "product-4", "description": "Super Star Jeans", "imageUrl": "https://picsum.photos/seed/p4/500/500", "imageHint": "kids jeans"
+    },
+    {
+      "id": "product-5", "description": "Sunny Day Dress", "imageUrl": "https://picsum.photos/seed/p5/500/500", "imageHint": "kids dress"
+    },
+    {
+      "id": "product-6", "description": "Rocket Ship Hoodie", "imageUrl": "https://picsum.photos/seed/p6/500/500", "imageHint": "kids hoodie"
+    },
+    {
+      "id": "product-7", "description": "Playful Polka Dot Skirt", "imageUrl": "https://picsum.photos/seed/p7/500/500", "imageHint": "kids skirt"
+    },
+    {
+      "id": "product-8", "description": "Little Bear Pajamas", "imageUrl": "https://picsum.photos/seed/p8/500/500", "imageHint": "kids pajamas"
+    },
+    {
+      "id": "product-9", "description": "Explorer Cargo Shorts", "imageUrl": "https://picsum.photos/seed/p9/500/500", "imageHint": "kids shorts"
+    },
+    {
+      "id": "product-10", "description": "Butterfly Wings Raincoat", "imageUrl": "https://picsum.photos/seed/p10/500/500", "imageHint": "kids raincoat"
+    },
+    {
+      "id": "product-11", "description": "Sleepy Sheep Swaddle", "imageUrl": "https://picsum.photos/seed/p11/500/500", "imageHint": "baby swaddle"
+    },
+    {
+      "id": "product-12", "description": "Friendly Fox Sweater", "imageUrl": "https://picsum.photos/seed/p12/500/500", "imageHint": "kids sweater"
+    },
+    {
+      "id": "product-13", "description": "Gamer Graphic Tee", "imageUrl": "https://picsum.photos/seed/p13/500/500", "imageHint": "graphic tee"
+    },
+    {
+      "id": "product-14", "description": "Unicorn Magic Tulle Dress", "imageUrl": "https://picsum.photos/seed/p14/500/500", "imageHint": "tulle dress"
+    },
+    {
+      "id": "product-15", "description": "First Steps Baby Booties", "imageUrl": "https://picsum.photos/seed/p15/500/500", "imageHint": "baby booties"
+    },
+    {
+      "id": "product-16", "description": "Construction Zone Joggers", "imageUrl": "https://picsum.photos/seed/p16/500/500", "imageHint": "kids joggers"
+    },
+    {
+      "id": "team-1", "description": "Founder Jane Doe", "imageUrl": "https://picsum.photos/seed/t1/400/400", "imageHint": "woman portrait"
+    },
+    {
+      "id": "team-2", "description": "Designer John Smith", "imageUrl": "https://picsum.photos/seed/t2/400/400", "imageHint": "man portrait"
+    },
+    {
+      "id": "team-3", "description": "Marketer Emily White", "imageUrl": "https://picsum.photos/seed/t3/400/400", "imageHint": "woman smiling"
+    },
+    {
+      "id": "story-1", "description": "A sketch of a children's t-shirt.", "imageUrl": "https://picsum.photos/seed/s1/800/600", "imageHint": "clothing sketch"
+    },
+    {
+      "id": "story-2", "description": "A sewing machine with colorful fabrics.", "imageUrl": "https://picsum.photos/seed/s2/800/600", "imageHint": "sewing machine"
+    },
+    {
+      "id": "story-3", "description": "The first TinyThreads store with a welcoming sign.", "imageUrl": "https://picsum.photos/seed/s3/800/600", "imageHint": "store front"
+    },
+    {
+      "id": "contact-map",
+      "description": "A map showing the location of the TinyThreads store.",
+      "imageUrl": "https://picsum.photos/seed/map/1200/500",
+      "imageHint": "city map"
+    }
+  ]
 }
