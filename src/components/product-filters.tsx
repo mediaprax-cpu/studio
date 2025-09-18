@@ -22,24 +22,10 @@ interface ProductFiltersProps {
 
 export function ProductFilters({ initialFilters, onFilterChange }: ProductFiltersProps) {
   const [filters, setFilters] = useState<Filters>(initialFilters);
-  const [isClient, setIsClient] = useState(false);
-
-  useEffect(() => {
-    setIsClient(true);
-  }, []);
 
   useEffect(() => {
     setFilters(initialFilters);
   }, [initialFilters]);
-
-  useEffect(() => {
-    // We only call onFilterChange when the component has mounted
-    // to avoid triggering updates during server-side rendering.
-    if (isClient) {
-      onFilterChange(filters);
-    }
-  }, [filters, isClient, onFilterChange]);
-
 
   const handleSearchChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setFilters(prev => ({ ...prev, search: e.target.value }));
