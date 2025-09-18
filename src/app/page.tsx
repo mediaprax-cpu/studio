@@ -28,8 +28,8 @@ export default function Home() {
               data-ai-hint={heroImage.imageHint}
             />
           )}
-          <div className="absolute inset-0 bg-black/30 z-10" />
-          <div className="relative z-20 container mx-auto px-4 text-center text-white">
+          <div className="absolute inset-0 bg-white/30 z-10" />
+          <div className="relative z-20 container mx-auto px-4 text-center text-foreground">
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-4 drop-shadow-lg font-headline">
               Bright Clothes for Bright Kids
             </h1>
