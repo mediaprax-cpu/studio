@@ -6,7 +6,7 @@ import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription } from '@/components/ui/dialog';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
-import { ShoppingCart } from 'lucide-react';
+import { Store } from 'lucide-react';
 
 interface ProductModalProps {
   product: Product | null;
@@ -54,16 +54,20 @@ export function ProductModal({ product, isOpen, onClose }: ProductModalProps) {
             </div>
             <div>
               <h4 className="font-semibold mb-2">Sizes:</h4>
-              <div className="flex gap-2">
+              <div className="flex gap-2 flex-wrap">
                 {product.sizes.map(size => (
-                  <Button key={size} variant="outline" size="sm">{size}</Button>
+                  <Badge key={size} variant="outline" className="text-base px-3 py-1">{size}</Badge>
                 ))}
               </div>
             </div>
           </div>
-          <Button size="lg" className="w-full mt-auto rounded-full shadow-lg">
-            <ShoppingCart className="mr-2 h-5 w-5" /> Add to Cart
-          </Button>
+           <div className="mt-auto text-center bg-secondary/50 p-4 rounded-lg">
+              <div className="flex items-center justify-center text-lg font-semibold">
+                <Store className="mr-2 h-5 w-5 text-primary"/>
+                Available in our store!
+              </div>
+              <p className="text-muted-foreground text-sm mt-1">Visit us to see this and more great items.</p>
+            </div>
         </div>
       </DialogContent>
     </Dialog>

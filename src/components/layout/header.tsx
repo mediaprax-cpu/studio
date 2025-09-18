@@ -4,7 +4,7 @@ import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { Button } from '@/components/ui/button';
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
-import { Menu, ShoppingBag } from 'lucide-react';
+import { Menu } from 'lucide-react';
 import { navLinks } from '@/lib/data';
 import { cn } from '@/lib/utils';
 import { Logo } from './logo';
@@ -66,10 +66,6 @@ export function Header() {
             ))}
           </nav>
           <div className="flex items-center">
-            <Button variant="ghost" size="icon">
-              <ShoppingBag className="h-6 w-6" />
-              <span className="sr-only">Shopping Bag</span>
-            </Button>
             <div className="md:hidden ml-2">
                 <Logo />
             </div>

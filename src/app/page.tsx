@@ -38,7 +38,7 @@ export default function Home() {
             </p>
             <Button asChild size="lg" className="rounded-full shadow-lg hover:scale-105 transition-transform">
               <Link href="/products">
-                Shop Now <ArrowRight className="ml-2 h-5 w-5" />
+                Explore Collection <ArrowRight className="ml-2 h-5 w-5" />
               </Link>
             </Button>
           </div>
@@ -47,7 +47,7 @@ export default function Home() {
         {/* Featured Categories */}
         <section id="categories" className="py-16 md:py-24 bg-background">
           <div className="container mx-auto px-4">
-            <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">Shop by Category</h2>
+            <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">View by Category</h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               {categories.map((category) => {
                 const categoryImage = PlaceHolderImages.find(p => p.id === category.imageId);
