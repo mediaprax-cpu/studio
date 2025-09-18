@@ -10,19 +10,19 @@
     {
       "id": "category-boys",
       "description": "A young boy smiling and wearing a cool t-shirt and jeans.",
-      "imageUrl": "https://picsum.photos/seed/boys/600/800",
+      "imageUrl": "https://i.supaimg.com/de1fa625-ea68-4419-95be-1c4f5001fe4c.jpg",
       "imageHint": "boy smiling"
     },
     {
       "id": "category-girls",
       "description": "A young girl in a colorful dress, twirling happily.",
-      "imageUrl": "https://picsum.photos/seed/girls/600/800",
+      "imageUrl": "https://i.supaimg.com/d3b45510-e8b4-4d79-80c5-67a575d934a4.jpg",
       "imageHint": "girl dress"
     },
     {
       "id": "category-newborn",
       "description": "A peaceful newborn baby in a soft, cozy onesie.",
-      "imageUrl": "https://picsum.photos/seed/newborn/600/800",
+      "imageUrl": "https://i.supaimg.com/0706e154-1adb-4312-ba6b-97b676c4d38e.jpg",
       "imageHint": "newborn baby"
     },
     {
