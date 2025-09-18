@@ -114,8 +114,8 @@
     },
     {
       "id": "contact-map",
-      "description": "A map showing the location of the TinyThreads store.",
-      "imageUrl": "https://picsum.photos/seed/map/1200/500",
+      "description": "Store location",
+      "imageUrl": "https://i.supaimg.com/1a39fc0b-e7bd-4d29-beb8-1bf14e953a85.jpg",
       "imageHint": "city map"
     },
     {
