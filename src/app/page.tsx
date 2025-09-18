@@ -33,7 +33,7 @@ export default function Home() {
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-4 drop-shadow-lg font-headline">
               Bright Clothes for Bright Kids
             </h1>
-            <p className="text-lg md:text-xl mb-8 max-w-2xl mx-auto drop-shadow-md">
+            <p className="text-lg md:text-xl mb-8 max-w-2xl mx-auto drop-shadow-md font-bold">
               Discover our collection of fun, comfy and durable clothing for your little ones and buy it in store only.
             </p>
             <Button asChild size="lg" className="rounded-full shadow-lg hover:scale-105 transition-transform">
