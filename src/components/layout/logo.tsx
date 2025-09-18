@@ -7,8 +7,8 @@ export function Logo() {
       <Image 
         src="https://i.supaimg.com/019a4b5b-4d01-477e-876b-0ab0187ecd1f.png"
         alt="guglumuglu logo"
-        width={40}
-        height={40}
+        width={60}
+        height={60}
         className="rounded-full"
       />
     </Link>
