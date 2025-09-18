@@ -111,6 +111,38 @@ export default function Home() {
             </div>
           </div>
         </section>
+
+        {/* Testimonials Section */}
+        <section className="py-16 md:py-24 bg-background">
+          <div className="container mx-auto px-4">
+            <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">What People Say</h2>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+              {testimonials.map((testimonial) => {
+                const testimonialImage = PlaceHolderImages.find(p => p.id === testimonial.imageId);
+                return (
+                  <Card key={testimonial.id} className="bg-card shadow-lg rounded-2xl">
+                    <CardContent className="pt-6">
+                      <div className="flex items-center mb-4">
+                         <Avatar className="h-14 w-14 mr-4 border-2 border-primary/50">
+                          {testimonialImage && <AvatarImage src={testimonialImage.imageUrl} alt={testimonial.name} data-ai-hint={testimonialImage.imageHint} />}
+                          <AvatarFallback>{testimonial.name.charAt(0)}</AvatarFallback>
+                        </Avatar>
+                        <div>
+                          <p className="font-bold text-lg">{testimonial.name}</p>
+                          <div className="flex text-yellow-500">
+                            {[...Array(5)].map((_, i) => <Star key={i} className="w-5 h-5 fill-current" />)}
+                          </div>
+                        </div>
+                      </div>
+                      <p className="text-muted-foreground italic">"{testimonial.feedback}"</p>
+                    </CardContent>
+                  </Card>
+                );
+              })}
+            </div>
+          </div>
+        </section>
+
       </main>
     </div>
   );

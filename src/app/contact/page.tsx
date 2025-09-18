@@ -49,7 +49,7 @@ export default function ContactPage() {
                 <h3 className="text-2xl font-bold mb-4">Our Info</h3>
                 <div className="flex items-center gap-4">
                   <MapPin className="w-6 h-6 text-primary" />
-                  <p>123 Sunshine Lane, Playville, PV 45678</p>
+                  <p>Main Bazaar, Delhi Gate, Firozpur, 152002</p>
                 </div>
                 <div className="flex items-center gap-4">
                   <Mail className="w-6 h-6 text-primary" />
@@ -57,7 +57,7 @@ export default function ContactPage() {
                 </div>
                 <div className="flex items-center gap-4">
                   <Phone className="w-6 h-6 text-primary" />
-                  <a href="tel:+1234567890" className="hover:underline">(123) 456-7890</a>
+                  <a href="tel:+919888226615" className="hover:underline">+91 9888226615</a>
                 </div>
               </CardContent>
             </Card>

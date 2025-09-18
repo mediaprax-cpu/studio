@@ -27,8 +27,8 @@ export function Footer() {
           <div>
             <h3 className="font-bold mb-4">Contact Us</h3>
             <address className="not-italic text-sm space-y-2">
-              <p>123 Sunshine Lane</p>
-              <p>Playville, PV 45678</p>
+              <p>Main Bazaar, Delhi Gate</p>
+              <p>Firozpur, 152002</p>
               <a href="mailto:hello@guglumuglu.com" className="hover:text-primary transition-colors">hello@guglumuglu.com</a>
             </address>
           </div>

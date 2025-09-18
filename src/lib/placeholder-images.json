@@ -73,7 +73,7 @@
       "id": "product-16", "description": "Construction Zone Joggers", "imageUrl": "https://picsum.photos/seed/p16/500/500", "imageHint": "kids joggers"
     },
     {
-      "id": "team-1", "description": "Founder Jane Doe", "imageUrl": "https://picsum.photos/seed/t1/400/400", "imageHint": "woman portrait"
+      "id": "team-1", "description": "Founder Mani", "imageUrl": "https://picsum.photos/seed/t1/400/400", "imageHint": "indian man"
     },
     {
       "id": "team-2", "description": "Designer John Smith", "imageUrl": "https://picsum.photos/seed/t2/400/400", "imageHint": "man portrait"
@@ -95,6 +95,15 @@
       "description": "A map showing the location of the TinyThreads store.",
       "imageUrl": "https://picsum.photos/seed/map/1200/500",
       "imageHint": "city map"
+    },
+    {
+      "id": "testimonial-1", "description": "Priya S.", "imageUrl": "https://picsum.photos/seed/ts1/100/100", "imageHint": "indian woman"
+    },
+    {
+      "id": "testimonial-2", "description": "Amit K.", "imageUrl": "https://picsum.photos/seed/ts2/100/100", "imageHint": "indian man"
+    },
+    {
+      "id": "testimonial-3", "description": "Sunita M.", "imageUrl": "https://picsum.photos/seed/ts3/100/100", "imageHint": "indian woman"
     }
   ]
 }

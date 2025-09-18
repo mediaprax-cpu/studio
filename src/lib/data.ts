@@ -20,6 +20,7 @@ export type Testimonial = {
   id: number;
   name: string;
   feedback: string;
+  imageId: string;
 };
 
 export type TeamMember = {
@@ -62,13 +63,13 @@ export const categories: Category[] = [
 ];
 
 export const testimonials: Testimonial[] = [
-  { id: 1, name: 'Sarah L.', feedback: 'The clothes are absolutely adorable and so well-made! My daughter wants to wear her sunny day dress every single day.' },
-  { id: 2, name: 'Mike P.', feedback: 'Finally, boys\' clothes that are fun and durable. The rocket ship hoodie is a huge hit with my son. Great quality!' },
-  { id: 3, name: 'Jessica R.', feedback: 'I bought the cozy cloud onesie for my newborn and it\'s the softest thing ever. Highly recommend for new parents.' },
+  { id: 1, name: 'Priya S.', feedback: 'The clothes are absolutely adorable and so well-made! My daughter wants to wear her sunny day dress every single day.', imageId: 'testimonial-1' },
+  { id: 2, name: 'Amit K.', feedback: 'Finally, boys\' clothes that are fun and durable. The rocket ship hoodie is a huge hit with my son. Great quality!', imageId: 'testimonial-2' },
+  { id: 3, name: 'Sunita M.', feedback: 'I bought the cozy cloud onesie for my newborn and it\'s the softest thing ever. Highly recommend for new parents.', imageId: 'testimonial-3' },
 ];
 
 export const teamMembers: TeamMember[] = [
-  { id: '1', name: 'Jane Doe', role: 'Founder & CEO', imageId: 'team-1' },
+  { id: '1', name: 'Mani', role: 'Founder & CEO', imageId: 'team-1' },
   { id: '2', name: 'John Smith', role: 'Lead Designer', imageId: 'team-2' },
   { id: '3', name: 'Emily White', role: 'Head of Fun', imageId: 'team-3' },
 ];
