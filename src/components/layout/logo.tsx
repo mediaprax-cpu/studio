@@ -5,7 +5,7 @@ export function Logo() {
   return (
     <Link href="/" className="flex items-center space-x-2">
       <Image 
-        src="https://placehold.co/40x40/FF69B4/FFFFFF?text=G&font=comic-sans-ms"
+        src="https://i.supaimg.com/019a4b5b-4d01-477e-876b-0ab0187ecd1f.png"
         alt="guglumuglu logo"
         width={40}
         height={40}
