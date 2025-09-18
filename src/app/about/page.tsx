@@ -10,7 +10,7 @@ export default function AboutPage() {
     <div className="bg-background">
       <div className="container mx-auto px-4 py-16 md:py-24">
         <header className="text-center mb-16">
-          <h1 className="text-4xl md:text-6xl font-bold mb-4 font-headline">About TinyThreads</h1>
+          <h1 className="text-4xl md:text-6xl font-bold mb-4 font-headline">About guglumuglu</h1>
           <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto">
             We're a small team with a big heart, dedicated to making childhood a little more colorful and a lot more comfortable.
           </p>

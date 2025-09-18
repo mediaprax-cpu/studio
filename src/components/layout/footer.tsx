@@ -29,7 +29,7 @@ export function Footer() {
             <address className="not-italic text-sm space-y-2">
               <p>123 Sunshine Lane</p>
               <p>Playville, PV 45678</p>
-              <a href="mailto:hello@tinythreads.com" className="hover:text-primary transition-colors">hello@tinythreads.com</a>
+              <a href="mailto:hello@guglumuglu.com" className="hover:text-primary transition-colors">hello@guglumuglu.com</a>
             </address>
           </div>
           <div>
@@ -42,7 +42,7 @@ export function Footer() {
           </div>
         </div>
         <div className="mt-8 pt-8 border-t border-border text-center text-sm">
-          <p>&copy; {new Date().getFullYear()} TinyThreads Emporium. All Rights Reserved.</p>
+          <p>&copy; {new Date().getFullYear()} guglumuglu. All Rights Reserved.</p>
         </div>
       </div>
     </footer>

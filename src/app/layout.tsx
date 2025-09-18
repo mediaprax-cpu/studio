@@ -5,7 +5,7 @@ import { Footer } from '@/components/layout/footer';
 import { Toaster } from '@/components/ui/toaster';
 
 export const metadata: Metadata = {
-  title: 'TinyThreads Emporium',
+  title: 'guglumuglu',
   description: 'Bright Clothes for Bright Kids',
 };
 

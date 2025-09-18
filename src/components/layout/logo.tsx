@@ -8,7 +8,7 @@ export function Logo() {
         <Sun className="h-6 w-6 text-yellow-400" />
       </div>
       <span className="font-bold text-lg font-headline text-foreground">
-        TinyThreads
+        guglumuglu
       </span>
     </Link>
   );

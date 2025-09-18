@@ -10,7 +10,7 @@ export default function StoryPage() {
         <header className="text-center mb-16">
           <h1 className="text-4xl md:text-6xl font-bold mb-4 font-headline">Our Story</h1>
           <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto">
-            From a tiny doodle to a closet full of joy, here’s how TinyThreads came to be.
+            From a tiny doodle to a closet full of joy, here’s how guglumuglu came to be.
           </p>
         </header>
 

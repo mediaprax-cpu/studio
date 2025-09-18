@@ -77,7 +77,7 @@ export const storyChapters: StoryChapter[] = [
     {
         id: '1',
         title: 'A Tiny Idea',
-        text: 'It all started with a simple sketch. Our founder, a mom of two, was tired of boring, uninspired kids\' clothes. She dreamed of creating a brand that was as colorful and unique as her own children. So, with a notebook full of doodles, the idea for TinyThreads was born.',
+        text: 'It all started with a simple sketch. Our founder, a mom of two, was tired of boring, uninspired kids\' clothes. She dreamed of creating a brand that was as colorful and unique as her own children. So, with a notebook full of doodles, the idea for guglumuglu was born.',
         imageId: 'story-1'
     },
     {
@@ -89,7 +89,7 @@ export const storyChapters: StoryChapter[] = [
     {
         id: '3',
         title: 'Opening Our Doors',
-        text: 'Today, TinyThreads has grown from a kitchen table dream to a beloved brand for families everywhere. We may have a bigger studio, but our mission remains the same: to create bright, beautiful clothes that let kids be kids. Thank you for being part of our story!',
+        text: 'Today, guglumuglu has grown from a kitchen table dream to a beloved brand for families everywhere. We may have a bigger studio, but our mission remains the same: to create bright, beautiful clothes that let kids be kids. Thank you for being part of our story!',
         imageId: 'story-3'
     }
 ]

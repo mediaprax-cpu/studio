@@ -53,7 +53,7 @@ export default function ContactPage() {
                 </div>
                 <div className="flex items-center gap-4">
                   <Mail className="w-6 h-6 text-primary" />
-                  <a href="mailto:hello@tinythreads.com" className="hover:underline">hello@tinythreads.com</a>
+                  <a href="mailto:hello@guglumuglu.com" className="hover:underline">hello@guglumuglu.com</a>
                 </div>
                 <div className="flex items-center gap-4">
                   <Phone className="w-6 h-6 text-primary" />
