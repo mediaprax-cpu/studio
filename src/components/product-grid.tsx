@@ -6,21 +6,34 @@ import { ProductCard } from './product-card';
 import { ProductModal } from './product-modal';
 import { AnimatePresence, motion } from 'framer-motion';
 import { Skeleton } from './ui/skeleton';
+import { Button } from './ui/button';
 
 interface ProductGridProps {
   products: Product[];
   loading?: boolean;
+  itemsPerPage?: number;
 }
 
-export function ProductGrid({ products, loading = false }: ProductGridProps) {
+export function ProductGrid({ products, loading = false, itemsPerPage = 9 }: ProductGridProps) {
   const [selectedProduct, setSelectedProduct] = useState<Product | null>(null);
+  const [currentPage, setCurrentPage] = useState(1);
 
+  const totalPages = Math.ceil(products.length / itemsPerPage);
+  const paginatedProducts = products.slice(
+    (currentPage - 1) * itemsPerPage,
+    currentPage * itemsPerPage
+  );
+  
   const handleViewDetails = (product: Product) => {
     setSelectedProduct(product);
   };
 
   const handleCloseModal = () => {
     setSelectedProduct(null);
+  };
+
+  const handlePageChange = (page: number) => {
+    setCurrentPage(page);
   };
 
   return (
@@ -31,11 +44,11 @@ export function ProductGrid({ products, loading = false }: ProductGridProps) {
       >
         <AnimatePresence>
         {loading ? (
-            Array.from({ length: 9 }).map((_, i) => (
+            Array.from({ length: itemsPerPage }).map((_, i) => (
                 <CardSkeleton key={i} />
             ))
-        ) : products.length > 0 ? (
-          products.map((product) => (
+        ) : paginatedProducts.length > 0 ? (
+          paginatedProducts.map((product) => (
             <motion.div
               key={product.id}
               layout
@@ -55,6 +68,28 @@ export function ProductGrid({ products, loading = false }: ProductGridProps) {
         )}
         </AnimatePresence>
       </motion.div>
+
+       {totalPages > 1 && (
+        <div className="flex justify-center items-center gap-4 mt-12">
+          <Button 
+            onClick={() => handlePageChange(currentPage - 1)} 
+            disabled={currentPage === 1}
+            variant="outline"
+          >
+            Previous
+          </Button>
+          <span className="text-muted-foreground">
+            Page {currentPage} of {totalPages}
+          </span>
+          <Button 
+            onClick={() => handlePageChange(currentPage + 1)}
+            disabled={currentPage === totalPages}
+            variant="outline"
+          >
+            Next
+          </Button>
+        </div>
+      )}
 
       <ProductModal
         product={selectedProduct}

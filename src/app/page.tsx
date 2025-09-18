@@ -52,7 +52,7 @@ export default function Home() {
               {categories.map((category) => {
                 const categoryImage = PlaceHolderImages.find(p => p.id === category.imageId);
                 return (
-                  <Link href="/products" key={category.id} className="group">
+                  <Link href={`/products?category=${category.id}`} key={category.id} className="group">
                     <Card className="overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300 rounded-2xl">
                       <CardContent className="p-0">
                         <div className="relative h-80">

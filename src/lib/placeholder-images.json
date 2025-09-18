@@ -73,6 +73,18 @@
     {
       "id": "product-16", "description": "Construction Zone Joggers", "imageUrl": "https://picsum.photos/seed/p16/500/500", "imageHint": "kids joggers"
     },
+     {
+      "id": "product-17", "description": "Garden Party Sundress", "imageUrl": "https://picsum.photos/seed/p17/500/500", "imageHint": "sundress floral"
+    },
+    {
+      "id": "product-18", "description": "Little Captain Romper", "imageUrl": "https://picsum.photos/seed/p18/500/500", "imageHint": "baby romper"
+    },
+    {
+      "id": "product-19", "description": "Skater Dude Long Sleeve", "imageUrl": "https://picsum.photos/seed/p19/500/500", "imageHint": "long sleeve"
+    },
+    {
+      "id": "product-20", "description": "Sparkle Star Tights", "imageUrl": "https://picsum.photos/seed/p20/500/500", "imageHint": "sparkle tights"
+    },
     {
       "id": "team-1", "description": "Founder Mani", "imageUrl": "https://picsum.photos/seed/t1/400/400", "imageHint": "indian man"
     },
