@@ -70,8 +70,8 @@ export const testimonials: Testimonial[] = [
 
 export const teamMembers: TeamMember[] = [
   { id: '1', name: 'Mani', role: 'Founder & CEO', imageId: 'team-1' },
-  { id: '2', name: 'John Smith', role: 'Lead Designer', imageId: 'team-2' },
-  { id: '3', name: 'Emily White', role: 'Head of Fun', imageId: 'team-3' },
+  { id: '2', name: 'Komal', role: 'Co-Founder', imageId: 'team-2' },
+  { id: '3', name: 'Prateek Arora', role: 'Technical Advisor', imageId: 'team-3' },
 ];
 
 export const storyChapters: StoryChapter[] = [
