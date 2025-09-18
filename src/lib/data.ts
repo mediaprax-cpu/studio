@@ -100,5 +100,4 @@ export const navLinks = [
   { href: '/about', label: 'About Us' },
   { href: '/story', label: 'Our Story' },
   { href: '/contact', label: 'Contact' },
-  { href: '/admin/description-generator', label: 'Admin' },
 ];
