@@ -3,17 +3,14 @@ import Image from 'next/image';
 
 export function Logo() {
   return (
-    <Link href="/" className="flex items-center space-x-2">
+    <Link href="/" className="flex items-center">
       <Image 
         src="https://i.supaimg.com/019a4b5b-4d01-477e-876b-0ab0187ecd1f.png"
         alt="guglumuglu logo"
-        width={50}
-        height={50}
+        width={40}
+        height={40}
         className="rounded-full"
       />
-      <span className="font-bold text-xl font-headline text-foreground">
-        guglumuglu
-      </span>
     </Link>
   );
 }
