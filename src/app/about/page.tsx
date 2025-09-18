@@ -54,7 +54,7 @@ export default function AboutPage() {
                 <Card key={member.id} className="w-full max-w-xs text-center shadow-lg rounded-2xl p-6">
                   <CardContent className="flex flex-col items-center">
                     <Avatar className="h-32 w-32 mb-4 border-4 border-primary/50">
-                      {memberImage && <AvatarImage src={memberImage.imageUrl} alt={member.name} data-ai-hint={memberImage.imageHint} />}
+                      {memberImage && <AvatarImage src={memberImage.imageUrl} alt={member.name} data-ai-hint={memberImage.imageHint} className="object-cover" />}
                       <AvatarFallback>{member.name.charAt(0)}</AvatarFallback>
                     </Avatar>
                     <h3 className="text-xl font-bold">{member.name}</h3>
