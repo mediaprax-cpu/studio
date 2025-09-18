@@ -26,10 +26,10 @@
       "imageHint": "newborn baby"
     },
     {
-      "id": "product-1", "description": "Dino Adventure T-Shirt", "imageUrl": "https://picsum.photos/seed/p1/500/500", "imageHint": "kids shirt"
+      "id": "product-1", "description": "Dino Adventure T-Shirt", "imageUrl": "https://i.supaimg.com/8fbc9952-3721-4115-97ea-b7c28def04ad.jpg", "imageHint": "kids shirt"
     },
     {
-      "id": "product-2", "description": "Rainbow Stripe Leggings", "imageUrl": "https://picsum.photos/seed/p2/500/500", "imageHint": "kids leggings"
+      "id": "product-2", "description": "Rainbow Stripe Leggings", "imageUrl": "https://i.supaimg.com/9b6d1deb-2bbe-4b2e-8761-19f6f82ec7ce.jpg", "imageHint": "kids leggings"
     },
     {
       "id": "product-3", "description": "Cozy Cloud Onesie", "imageUrl": "https://picsum.photos/seed/p3/500/500", "imageHint": "baby onesie"
