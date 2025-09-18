@@ -95,13 +95,22 @@
       "id": "team-3", "description": "Advisor Prateek Arora", "imageUrl": "https://i.supaimg.com/00016313-756d-4682-9d5b-261033544948.jpg", "imageHint": "indian man"
     },
     {
-      "id": "story-1", "description": "A sketch of a children's t-shirt.", "imageUrl": "https://picsum.photos/seed/s1/800/600", "imageHint": "clothing sketch"
+      "id": "story-1",
+      "description": "A sketch of a children's t-shirt.",
+      "imageUrl": "https://i.supaimg.com/62c425bc-ae93-4475-806e-54e1a155def6.jpg",
+      "imageHint": "clothing sketch"
     },
     {
-      "id": "story-2", "description": "A sewing machine with colorful fabrics.", "imageUrl": "https://picsum.photos/seed/s2/800/600", "imageHint": "sewing machine"
+      "id": "story-2",
+      "description": "A sewing machine with colorful fabrics.",
+      "imageUrl": "https://i.supaimg.com/813426e8-e5c7-44a5-807c-82bd047bd33f.jpg",
+      "imageHint": "sewing machine"
     },
     {
-      "id": "story-3", "description": "The first TinyThreads store with a welcoming sign.", "imageUrl": "https://picsum.photos/seed/s3/800/600", "imageHint": "store front"
+      "id": "story-3",
+      "description": "The first TinyThreads store with a welcoming sign.",
+      "imageUrl": "https://i.supaimg.com/a9337f8b-bfb0-4d19-9c3e-2adfebb59ec1.jpg",
+      "imageHint": "store front"
     },
     {
       "id": "contact-map",
