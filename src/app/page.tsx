@@ -65,9 +65,9 @@ export default function Home() {
                               data-ai-hint={categoryImage.imageHint}
                             />
                           )}
-                          <div className="absolute inset-0 bg-black/20" />
-                          <div className="absolute bottom-6 left-6">
-                            <h3 className="text-3xl font-bold text-white drop-shadow-md">{category.name}</h3>
+                          <div className="absolute inset-0 bg-black/40 flex items-center justify-center" />
+                          <div className="absolute inset-0 flex items-center justify-center">
+                            <h3 className="text-4xl font-bold text-white drop-shadow-lg">{category.name}</h3>
                           </div>
                         </div>
                       </CardContent>
