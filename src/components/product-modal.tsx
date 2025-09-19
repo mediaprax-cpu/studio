@@ -40,10 +40,7 @@ export function ProductModal({ product, isOpen, onClose }: ProductModalProps) {
               {product.description}
             </DialogDescription>
           </DialogHeader>
-          <div className="my-6">
-            <p className="text-3xl font-bold text-primary">${product.price.toFixed(2)}</p>
-          </div>
-          <div className="space-y-4 mb-8">
+          <div className="space-y-4 my-8">
             <div>
               <h4 className="font-semibold mb-2">Colors:</h4>
               <div className="flex gap-2">

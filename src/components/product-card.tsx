@@ -32,7 +32,6 @@ export function ProductCard({ product, onViewDetails }: ProductCardProps) {
       </CardHeader>
       <CardContent className="p-4 bg-card">
         <CardTitle className="text-lg font-bold truncate">{product.name}</CardTitle>
-        <p className="text-primary font-semibold text-xl mt-2">${product.price.toFixed(2)}</p>
       </CardContent>
       <CardFooter className="p-4 bg-card">
         {onViewDetails ? (
