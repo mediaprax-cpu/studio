@@ -6,7 +6,6 @@ import type { Product } from '@/lib/data';
 import { products as allProducts } from '@/lib/data';
 import { ProductFilters, type Filters } from '@/components/product-filters';
 import { ProductGrid } from '@/components/product-grid';
-import { filterProductsBySearch } from '../actions';
 import { useDebouncedCallback } from 'use-debounce';
 
 const PRODUCTS_PER_PAGE = 9;
@@ -28,10 +27,19 @@ function ProductsPageContent() {
     }
   }, [searchParams]);
 
-  const handleSearch = useDebouncedCallback(async (query: string) => {
+  const handleSearch = useDebouncedCallback((query: string) => {
     setLoading(true);
-    const filteredProducts = await filterProductsBySearch(query);
-    setProducts(filteredProducts);
+    if (!query) {
+      setProducts(allProducts);
+      setLoading(false);
+      return;
+    }
+    const lowered = query.toLowerCase();
+    const filtered = allProducts.filter(p =>
+      p.name.toLowerCase().includes(lowered) ||
+      p.description.toLowerCase().includes(lowered)
+    );
+    setProducts(filtered);
     setLoading(false);
   }, 300);
 

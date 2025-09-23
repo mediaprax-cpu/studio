@@ -5,8 +5,6 @@ import { useState } from 'react';
 import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { z } from 'zod';
-import type { GenerateProductDescriptionInput } from '@/ai/flows/generate-product-descriptions';
-import { createDescription } from '@/app/admin/description-generator/actions';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
 import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from '@/components/ui/form';
@@ -50,14 +48,24 @@ export function DescriptionGeneratorForm() {
   async function onSubmit(values: z.infer<typeof formSchema>) {
     setIsSubmitting(true);
     setGeneratedDescription('');
-    const result = await createDescription(values as GenerateProductDescriptionInput);
-    if (result.success && result.description) {
-      setGeneratedDescription(result.description);
-    } else {
+    try {
+      // Simple client-side placeholder generation to allow static export
+      const { productName, category, targetAudience, colors, sizes, material, style, additionalDetails } = values;
+      const sentenceParts: string[] = [];
+      sentenceParts.push(`${productName} is a ${style} ${material} ${category} designed for ${targetAudience}.`);
+      if (colors) sentenceParts.push(`Available in ${colors}.`);
+      if (sizes) sentenceParts.push(`Sizes include ${sizes}.`);
+      if (additionalDetails) sentenceParts.push(additionalDetails);
+      const description = sentenceParts.join(' ');
+      // Mimic latency
+      await new Promise(r => setTimeout(r, 600));
+      setGeneratedDescription(description);
+    } catch (error) {
+      console.error(error);
       toast({
         variant: 'destructive',
-        title: 'Oh no! Something went wrong.',
-        description: result.error || 'There was a problem with your request.',
+        title: 'Generator error',
+        description: 'Failed to generate description.',
       });
     }
     setIsSubmitting(false);
