@@ -6,7 +6,6 @@ import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { z } from 'zod';
 import type { GenerateProductDescriptionInput } from '@/ai/flows/generate-product-descriptions';
-import { createDescription } from '@/app/admin/description-generator/actions';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
 import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from '@/components/ui/form';
@@ -27,6 +26,32 @@ const formSchema = z.object({
   style: z.string().min(1, 'Style is required.'),
   additionalDetails: z.string().optional(),
 });
+
+async function createDescription(input: GenerateProductDescriptionInput) {
+  try {
+    const response = await fetch(`/api/generate-description`, {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(input),
+    });
+
+    if (!response.ok) {
+        const errorData = await response.json();
+        throw new Error(errorData.error || 'Failed to generate description.');
+    }
+    
+    const result = await response.json();
+    return { success: true, description: result.description };
+
+  } catch (error) {
+    console.error('Error generating description:', error);
+    const errorMessage = error instanceof Error ? error.message : 'An unknown error occurred.';
+    return { success: false, error: errorMessage };
+  }
+}
+
 
 export function DescriptionGeneratorForm() {
   const [isSubmitting, setIsSubmitting] = useState(false);

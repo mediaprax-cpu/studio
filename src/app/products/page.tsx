@@ -6,10 +6,47 @@ import type { Product } from '@/lib/data';
 import { products as allProducts } from '@/lib/data';
 import { ProductFilters, type Filters } from '@/components/product-filters';
 import { ProductGrid } from '@/components/product-grid';
-import { filterProductsBySearch } from '../actions';
 import { useDebouncedCallback } from 'use-debounce';
 
 const PRODUCTS_PER_PAGE = 9;
+
+async function filterProductsBySearch(query: string): Promise<Product[]> {
+    if (!query) return allProducts;
+    try {
+        const response = await fetch(`/api/filter-products`, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({ description: query }),
+        });
+
+        if (!response.ok) {
+            throw new Error(`API call failed with status: ${response.status}`);
+        }
+
+        const filteredProducts: Product[] = await response.json();
+        
+        if (filteredProducts.length > 0) {
+            return filteredProducts;
+        }
+
+        // Fallback if AI returns nothing useful
+        return allProducts.filter(p =>
+            p.name.toLowerCase().includes(query.toLowerCase()) ||
+            p.description.toLowerCase().includes(query.toLowerCase())
+        );
+
+    } catch (error) {
+        console.error('API filter failed:', error);
+        // Fallback to simple text search on error
+        return allProducts.filter(p =>
+            p.name.toLowerCase().includes(query.toLowerCase()) ||
+            p.description.toLowerCase().includes(query.toLowerCase())
+        );
+    }
+}
+
 
 function ProductsPageContent() {
   const searchParams = useSearchParams();
